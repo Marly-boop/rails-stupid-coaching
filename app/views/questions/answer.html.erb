@@ -1,11 +1,15 @@
-<h1>Silly Answer</h1>
+<div class="container2">
+  <div class="answer">
+    <h1>Silly Answer</h1>
 
-<%=@question%>
-<% if @question == "I am going to work" %>
-    <h4>Great!</h4>
-<% elsif @question.include? "?" %>
-    <h4>Silly question, get dressed and go to work!</h4>
-<% else %>
-    <h4>I don't care, get dressed and go to work</h4>
-<% end %>
-<%=link_to "ask another question", ask_path%>
+    <%=@question%>
+    <% if @question == "I am going to work" %>
+        <h4>Great!</h4>
+    <% elsif @question.include? "?" %>
+        <h4>Silly question, get dressed and go to work!</h4>
+    <% else %>
+        <h4>I don't care, get dressed and go to work</h4>
+    <% end %>
+  </div>
+  <%=link_to "ask another question", ask_path%>
+</div>

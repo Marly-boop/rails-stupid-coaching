@@ -2,21 +2,47 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-    background: lightcyan;
+  background: lightcyan;
 }
 
+.container {
+  padding: 30px;
+  margin: 30px;
+  border: 4mm ridge rgba(170, 50, 220, .6);
+}
+
+.container2 {
+  padding: 30px;
+  margin: 30px;
+  border: 4mm ridge rgba(50, 214, 220, 0.6);
+}
 input {
 	border: 3px solid lightgray;
-    border-radius: 10px;
-    padding: 10px 10px;
-	box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-sizing: border-box;
 }
 
 h1 h4{
-    font-family: fantasy;
+  font-family: fantasy;
 }
 
 a {
-    font-family: monospace;
-    color: red;
+  font-family: monospace;
+  color: red;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.question {
+  display: grid;
+  justify-content: center;
+}
+
+.answer {
+  display: grid;
+  justify-content: center;
 }
